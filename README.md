@@ -25,3 +25,20 @@ Write a Javascript program that will store a number (eg `28`, `1755`, `9`, etc) 
 
 ##  Bonus
 - Use only 1 console.log!
+
+<!-- Solution -->
+
+let number = 1755;
+let result = "";
+
+if (number % 3 === 0) {
+    result += "Pling";
+}
+if (number % 5 === 0) {
+    result += "Plang";
+}
+if (number % 7 === 0) {
+    result += "Plong";
+}
+
+console.log(result || number.toString());
